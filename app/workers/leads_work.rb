@@ -1,4 +1,5 @@
 class LeadsWorker
+  require 'csv' 
   include SideKiq::Worker
 
   def perform(leads_file)
